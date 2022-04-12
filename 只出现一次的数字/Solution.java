@@ -1,0 +1,9 @@
+public class Solution {
+    public int singleNumber(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            nums[0] ^= nums[i];
+            System.out.println(nums[0]);
+        }
+        return nums[0];
+    }
+}
